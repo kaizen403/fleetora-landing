@@ -3,9 +3,13 @@ import { ArrowRight } from "lucide-react";
 export function Hero() {
   return (
     <section className="relative pt-16 overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        src="https://pub-ad1790e90bf848a3a9f1b69e95207619.r2.dev/hero-bg.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
       />
       <div className="absolute inset-0 bg-black/25" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-black/40" />
